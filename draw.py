@@ -24,7 +24,8 @@ cv.line(black, (0,0), (black.shape[0]//2, black.shape[1]//2), (255,255,255),thic
 
 #5. Draw text
 # cv.putText(black, "Hello")
-cv.putText(black, "Hello",(255,255),cv.FONT_HERSHEY_PLAIN,1.0,(255,255,255),thickness=2)
+text = cv.putText(black, "Hello",(255,255),cv.FONT_HERSHEY_PLAIN,1.0,(255,255,255),thickness=2)
+cv.imshow('Text', text)
 # #Color is by default black
-cv.imshow('Rectangle', black)
+cv.imshow('Rectangle', text)
 cv.waitKey(0)
